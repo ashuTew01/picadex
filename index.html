@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Picadex</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+   
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <!-- <div class="background-image">
+        <img src="images/bg-desktop-dark.jpg">
+    </div> -->
+    <div class="big-container">
+        <div class="nav-bar">
+            <div class="nav-btn">
+                <img class="nav-btn-img" src="images/nav-btn1.jpg" alt="">
+            </div>
+            <div class="nav-btn">
+                <img class="nav-btn-img" src="images/nav-btn1.jpg" alt="">
+            </div>
+            <div class="nav-btn">
+                <img class="nav-btn-img" src="images/nav-btn1.jpg" alt="">
+            </div>
+            <div class="nav-btn">
+                <img class="nav-btn-img" src="images/nav-btn1.jpg" alt="">
+            </div>
+            <div class="nav-btn">
+                <img class="nav-btn-img" src="images/nav-btn1.jpg" alt="">
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="header">
+                <div class="title">
+                    PICADEX
+                </div>
+                <!-- <div>
+                    <h3 class="header-text">Your Favourite Task Manager...</h3>
+                </div> -->
+            </div>
+            <div class="new-task">
+                <div class="check">
+                    <div class="check-mark">
+                    </div>
+                </div>
+                <div class="new-task-input">
+                    <form onsubmit="addItem(event)">
+                        <input id="task-input" type="text" placeholder="Create a new Task..." />
+                    </form>
+                </div>
+            </div>
+            <div class="task-items-wrapper">
+                <div class="task-items">
+                    <div class="task-item">
+                        <div class="check">
+                            <div class="check-mark checked">
+                                <img src="images/icon-check.svg">
+                            </div>
+                        </div>
+                        <div class="task-text checked">
+                            Cut the lawn
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="check">
+                            <div class="check-mark">
+                                
+                            </div>
+                        </div>
+                        <div class="task-text">
+                            Cut the lawn
+                        </div>
+                    </div>
+                    <div class="task-item">
+                        <div class="check">
+                            <div class="check-mark">
+                            </div>
+                        </div>
+                        <div class="task-text">
+                            Cut the lawn
+                        </div>
+                    </div>
+                </div>
+                <div class="task-items-info">
+                    <div class="items-left">
+                        5 items left
+                    </div>
+                    <div class="items-statuses">
+                        <span class="active">All</span>
+                        <span>Active</span>
+                        <span>Completed</span>
+                    </div>
+                    <div class="items-clear">
+                        <span>Clear Completed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
